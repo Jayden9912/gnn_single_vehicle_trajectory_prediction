@@ -1,0 +1,18 @@
+# GNN_single_vehicle_trajectory_prediction
+
+This repository is about my learning journey on the whole pipeline of a machine learning project. It is done based on this research paper. For more information,
+please refer to that [paper](https://arxiv.org/pdf/2107.03663.pdf) and [github repository](https://github.com/Xiaoyu006/GNN-RNN-Based-Trajectory-Prediction-ITSC2021).
+
+The model used in this project is GNN-RNN for single vehicle trajectory prediction.
+
+# Data preprocessing
+Refer to this [github repository](https://github.com/Xiaoyu006/GNN-RNN-Based-Trajectory-Prediction-ITSC2021).
+
+# Train
+```
+python training.py
+```
+
+## Painful lesson
+Remember, garbage in, garbage out. At first, I only prepare the dataset with 700+ examples, which is definitely not enough. The model is overfit after training and 
+the error never goes down steadily. I am not aware of this and spend weeks to debug until I realised there is no bugs in my code.
